@@ -270,7 +270,7 @@ export default {
       this.selectedButton[where] = button;
     },
     connectToSocket() {
-      this.socket = io(`http://192.168.14.225:3000`); // Replace with your server URL
+      this.socket = io(``); // Replace with your server URL
 
       this.socket.on("connect", () => {
         this.isConnected = true;
